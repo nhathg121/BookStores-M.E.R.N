@@ -8,9 +8,8 @@ import {
   Button,
 } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
-import CartItemComponent from "../../components/CartItemComponent";
 
-const UserOrderDetailPage = () => {
+const UserCartDetailsPage = () => {
   return (
     <Container fluid>
       <Row className="mt-4">
@@ -71,22 +70,7 @@ const UserOrderDetailPage = () => {
           </ListGroup>
         </Col>
       </Row>
-
-      <Row className="mt-4">
-        <Col md={8}>
-          <h1>Order items</h1>
-          <ListGroup variant="flush">
-            {Array.from({ length: 3 }).map((item, index) => {
-              return (
-                <ListGroup.Item>
-                  <CartItemComponent key={index} />
-                </ListGroup.Item>
-              );
-            })}
-          </ListGroup>
-        </Col>
-      </Row>
     </Container>
   );
 };
-export default UserOrderDetailPage;
+export default UserCartDetailsPage;

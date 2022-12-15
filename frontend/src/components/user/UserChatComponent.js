@@ -5,7 +5,7 @@ const UserChatComponent = () => {
       <input type="checkbox" id="check" />
       <label className="chat-btn" htmlFor="check">
         <i>
-          <span class="position-absolute top-0 start-10 translate-middle  border border-light rounded-circle bg-danger p-2">
+          <span className="position-absolute top-0 start-10 translate-middle  border border-light rounded-circle bg-danger p-2">
             {/* <span class="visually-hidden">unread messages</span> */}
           </span>
         </i>
@@ -21,7 +21,7 @@ const UserChatComponent = () => {
         <div className="chat-form">
           <div className="cht-msg">
             {Array.from({ length: 2 }).map((_, id) => (
-              <div>
+              <div key={id}>
                 <p>
                   <b>You wrote:</b> Hello, world!! this is a toast message
                 </p>

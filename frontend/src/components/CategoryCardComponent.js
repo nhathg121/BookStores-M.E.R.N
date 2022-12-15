@@ -5,7 +5,7 @@ const CategoryCardComponent = ({ title, des, image }) => {
   return (
     <>
       <Card style={{ width: "20rem" }}>
-        <Card.Img variant="top" src={image} />
+        <Card.Img crossOrigin="anonymous" variant="top" src={image} />
         <Card.Body>
           <Card.Title>{title}</Card.Title>
           <Card.Text>{des}</Card.Text>

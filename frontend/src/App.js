@@ -19,7 +19,7 @@ import ProductDetailPage from "./pages/ProductDetailPage";
 // User Pages
 import ProtectedRoutesComponent from "../src/components/ProtectedRoutesComponent";
 // protected user pages
-import UserCartDetailPage from "./pages/user/UserCartDetailPage";
+import UserCartDetailsPage from "./pages/user/UserCartDetailsPage";
 import UserOrdersPage from "./pages/user/UserOrdersPage";
 import UserOrderDetailPage from "./pages/user/UserOrderDetailPage";
 import UserProfilePage from "./pages/user/UserProfilePage";
@@ -34,10 +34,12 @@ import AdminOrderDetailPage from "./pages/admin/AdminOrderDetailPage";
 import AdminOrdersPage from "./pages/admin/AdminOrdersPage";
 import AdminProductsPage from "./pages/admin/AdminProductsPage";
 import AdminUsersPage from "./pages/admin/AdminUsersPage";
+import ScrollToTop from "./utils/ScrollToTop";
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <HeaderComponent />
       <Routes>
         <Route element={<RoutesWithUserChatComponent />}>
@@ -47,7 +49,7 @@ function App() {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/registor" element={<RegistorPage />} />
           <Route path="/product-list" element={<ProductListPage />} />
-          <Route path="/product-details/:id" element={<ProductDetailPage />} />
+          <Route path="/product-details" element={<ProductDetailPage />} />
           <Route path="*" element="PAGE NOT FOUND 404" />
 
           <Route path="/" component={HomePage}>
@@ -59,8 +61,10 @@ function App() {
           <Route element={<ProtectedRoutesComponent admin={false} />}>
             <Route path="/user" element={<UserProfilePage />} />
             <Route path="/user/my-orders" element={<UserOrdersPage />} />
-            <Route path="/user/cart-details" element={<UserCartDetailPage />} />
-
+            <Route
+              path="/user/cart-details"
+              element={<UserCartDetailsPage />}
+            />
             <Route
               path="/user/order-details"
               element={<UserOrderDetailPage />}
@@ -76,7 +80,7 @@ function App() {
           <Route path="/admin/products" element={<AdminProductsPage />} />
           <Route path="/admin/orders" element={<AdminOrdersPage />} />
           <Route
-            path="/admin/create-product"
+            path="/admin/create-new-product"
             element={<AdminCreaeteProductPage />}
           />
           <Route

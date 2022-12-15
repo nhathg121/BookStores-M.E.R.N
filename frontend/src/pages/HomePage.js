@@ -1,40 +1,41 @@
-import ProductCarouselComponent from "../components/ProductCarouselComponent";
+import { Container, Row } from "react-bootstrap";
 import CategoryCardComponent from "../components/CategoryCardComponent";
-import { Row, Container } from "react-bootstrap";
+import ProductCarouselComponent from "../components/ProductCarouselComponent";
 const HomePage = () => {
   const categories = [
     {
-      title: "Book1",
+      id: 1,
+      title: "Thỏ Bảy Màu và những người nghĩ nó là bạn",
       des: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, rerum.",
-      image:
-        "https://salt.tikicdn.com/cache/280x280/ts/product/55/11/4a/d9aa2f398ca67fba315157c6b589655a.jpg.webp",
+      image: "https://cf.shopee.vn/file/af914230b7a8b203bd30915a261fc227",
     },
     {
-      title: "Book1",
+      id: 2,
+      title: "Thỏ Bảy Màu và những người nghĩ nó là bạn",
       des: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, rerum.",
-      image:
-        "https://salt.tikicdn.com/cache/280x280/ts/product/55/11/4a/d9aa2f398ca67fba315157c6b589655a.jpg.webp",
+      image: "https://cf.shopee.vn/file/af914230b7a8b203bd30915a261fc227",
     },
     {
-      title: "Book1",
+      id: 3,
+      title: "Thỏ Bảy Màu và những người nghĩ nó là bạn",
       des: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, rerum.",
-      image:
-        "https://salt.tikicdn.com/cache/280x280/ts/product/55/11/4a/d9aa2f398ca67fba315157c6b589655a.jpg.webp",
+      image: "https://cf.shopee.vn/file/af914230b7a8b203bd30915a261fc227",
     },
     {
-      title: "Book1",
+      id: 4,
+      title: "Thỏ Bảy Màu và những người nghĩ nó là bạn",
       des: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, rerum.",
-      image:
-        "https://salt.tikicdn.com/cache/280x280/ts/product/55/11/4a/d9aa2f398ca67fba315157c6b589655a.jpg.webp",
+      image: "https://cf.shopee.vn/file/af914230b7a8b203bd30915a261fc227",
     },
   ];
   return (
     <>
-      <ProductCarouselComponent></ProductCarouselComponent>
+      <ProductCarouselComponent />
       <Container>
-        <Row xs={1} md={2} className="g-4">
+        <Row xs={1} md={2} className="g-4 mt-3">
           {categories.map((data) => (
             <CategoryCardComponent
+              key={data.id}
               title={data.title}
               des={data.des}
               image={data.image}

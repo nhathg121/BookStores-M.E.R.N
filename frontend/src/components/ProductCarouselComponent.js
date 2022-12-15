@@ -6,67 +6,81 @@ const ProductCarouselComponent = () => {
     cursor: "pointer",
   };
   return (
-    <Carousel>
+    <Carousel className="bg-primary">
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://via.placeholder.com/800x400"
+          src="https://saysach.com/wp-content/uploads/2021/05/tho-bay-mau-1.jpg"
           style={{ height: "600px", objectFit: "contain" }}
           alt="First slide"
         />
-
-        <Carousel.Caption>
-          <LinkContainer style={cursorP} to="/product-details">
-            <h3>First slide label</h3>
-          </LinkContainer>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
+        <LinkContainer style={cursorP} to="/product-details">
+          <Carousel.Caption>
+            <h3
+              style={{
+                color: "red",
+                textShadow: "black 0.1em 0.1em 0.2em",
+                // fontSize: "45px",
+                fontWeight: 700,
+              }}
+            >
+              Tho Bay Mau
+            </h3>
+            <p style={{ color: "blue", fontWeight: 700 }}>
+              Nulla vitae elit libero, a pharetra augue mollis interdum.
+            </p>
+          </Carousel.Caption>
+        </LinkContainer>
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://via.placeholder.com/800x400
-          "
+          src="https://saysach.com/wp-content/uploads/2021/05/tho-bay-mau-1.jpg"
           style={{ height: "600px", objectFit: "contain" }}
-          alt="Second slide"
+          alt="First slide"
         />
-
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
+        <LinkContainer style={cursorP} to="/product-details">
+          <Carousel.Caption>
+            <h3
+              style={{
+                color: "red",
+                textShadow: "black 0.1em 0.1em 0.2em",
+                // fontSize: "45px",
+                fontWeight: 700,
+              }}
+            >
+              Tho Bay Mau
+            </h3>
+            <p style={{ color: "blue", fontWeight: 700 }}>
+              Nulla vitae elit libero, a pharetra augue mollis interdum.
+            </p>
+          </Carousel.Caption>
+        </LinkContainer>
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://via.placeholder.com/800x400
-          "
+          src="https://saysach.com/wp-content/uploads/2021/05/tho-bay-mau-1.jpg"
           style={{ height: "600px", objectFit: "contain" }}
-          alt="Third slide"
+          alt="First slide"
         />
-
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="https://via.placeholder.com/800x400
-          "
-          style={{ height: "600px", objectFit: "contain" }}
-          alt="Third slide"
-        />
-
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
+        <LinkContainer style={cursorP} to="/product-details">
+          <Carousel.Caption>
+            <h3
+              style={{
+                color: "red",
+                textShadow: "black 0.1em 0.1em 0.2em",
+                // fontSize: "45px",
+                fontWeight: 700,
+              }}
+            >
+              Tho Bay Mau
+            </h3>
+            <p style={{ color: "blue", fontWeight: 700 }}>
+              Nulla vitae elit libero, a pharetra augue mollis interdum.
+            </p>
+          </Carousel.Caption>
+        </LinkContainer>
       </Carousel.Item>
     </Carousel>
   );
