@@ -76,13 +76,11 @@ const UserOrderDetailPage = () => {
         <Col md={8}>
           <h1>Order items</h1>
           <ListGroup variant="flush">
-            {Array.from({ length: 3 }).map((item, index) => {
-              return (
-                <ListGroup.Item>
-                  <CartItemComponent key={index} />
-                </ListGroup.Item>
-              );
-            })}
+            {Array.from({ length: 1 }).map((item, index) => (
+              <ListGroup.Item key={index}>
+                <CartItemComponent />
+              </ListGroup.Item>
+            ))}
           </ListGroup>
         </Col>
       </Row>

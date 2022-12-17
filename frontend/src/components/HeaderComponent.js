@@ -37,7 +37,7 @@ const HeaderComponent = () => {
                 <Dropdown.Divider />
                 <Dropdown.Item href="#">Separated link</Dropdown.Item>
               </DropdownButton>
-              <Form.Control type="text" placeholder="Normal text" />
+              <Form.Control type="text" placeholder="Search something..." />
               <Button variant="warning">
                 <i className="bi bi-search text"></i>
               </Button>
@@ -73,19 +73,22 @@ const HeaderComponent = () => {
               </NavDropdown.Item>
             </NavDropdown>
 
-            <LinkContainer to="/admin/orders">
+            <LinkContainer to="/login">
               <Nav.Link>Login</Nav.Link>
             </LinkContainer>
-            <LinkContainer to="/admin/orders">
+            <LinkContainer to="/registor">
               <Nav.Link>Register</Nav.Link>
             </LinkContainer>
-            <Nav.Link href="#pricing" className="position-relative px-3">
-              <Badge className="position-absolute top-1  start-100  translate-middle  badge border border-light rounded-circle bg-danger p-2">
-                9
-              </Badge>
-              <i className="bi bi-cart3 fs-5"></i>
-              <span className="ps-1">CART</span>
-            </Nav.Link>
+
+            <LinkContainer to="/cart">
+              <Nav.Link href="#pricing" className="position-relative px-3">
+                <Badge className="position-absolute top-1  start-100  translate-middle  badge border border-light rounded-circle bg-danger p-2">
+                  9
+                </Badge>
+                <i className="bi bi-cart3 fs-5"></i>
+                <span className="ps-1">CART</span>
+              </Nav.Link>
+            </LinkContainer>
           </Nav>
         </Navbar.Collapse>
       </Container>

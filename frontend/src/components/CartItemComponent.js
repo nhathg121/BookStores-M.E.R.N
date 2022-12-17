@@ -31,7 +31,7 @@ function CartItemComponent() {
             window.confirm("Are U Sure ?");
           }}
         >
-          <i class="bi bi-trash3-fill"></i>
+          <i className="bi bi-trash3-fill"></i>
         </Button>
       </Col>
     </Row>

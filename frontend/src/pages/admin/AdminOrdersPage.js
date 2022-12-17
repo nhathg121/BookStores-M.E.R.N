@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import AdminLinksComponent from "../../components/admin/AdminLinksComponent";
 
-function UserOrdersPage() {
+function AdminOrdersPage() {
   return (
     <Container>
       <Row className="mt-5">
@@ -47,4 +47,4 @@ function UserOrdersPage() {
     </Container>
   );
 }
-export default UserOrdersPage;
+export default AdminOrdersPage;
